@@ -150,7 +150,7 @@ namespace Тестовый_Проект
                     Console.WriteLine("Вы попали!");
 
                 }
-                if (cordinatex < 0 || cordinatex >= MaxValue || cordinatey < 0 || cordinatey >= MaxValue)//защита от ошибок
+                if (cordinatex < 0 || cordinatex >= MaxValue || cordinatey < 0 || cordinatey >= MaxValue)
                 {
                     Console.WriteLine("Ваша эскадра ушла за координаты, и была признана дезертирующей. Вас отстранили от должности и предали военному трибуналу.");
                 }
