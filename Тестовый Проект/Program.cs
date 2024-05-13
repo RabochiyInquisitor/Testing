@@ -102,8 +102,7 @@ namespace Тестовый_Проект
       
        static void DrawMap(char[,] map)
        {
-           // if (map = ships)
-            {
+           
 
 
 
@@ -112,15 +111,15 @@ namespace Тестовый_Проект
                 
                 
 
-                int c = random.Next(5, 30);
-                int v = random.Next(5, 30);
+                int c = random.Next(5, 34);
+                int v = random.Next(5, 12);
 
 
               
                 while (map[c, v] != ' ')
                 {
-                    c = random.Next(5, 30);
-                    v = random.Next(5, 30); 
+                    c = random.Next(5, 34);
+                    v = random.Next(5, 12); 
                 
                 }
                 map[c, v] = '.';
@@ -144,7 +143,7 @@ namespace Тестовый_Проект
                 }
                 Console.WriteLine(c);
                 Console.WriteLine(v);
-            }
+            
             
             
             
