@@ -1,7 +1,6 @@
 ﻿using System;
 using System.IO;
 using System.Runtime.InteropServices;
-using static System.Console;
 
 
 
@@ -107,14 +106,14 @@ namespace Тестовый_Проект
                 int v = random.Next(5, 11);
 
 
-                map[c, v] = '.';
-
-                while (map[c, v] != ' ')
-                {
-                    c = random.Next(5, 11);
-                    v = random.Next(5, 11);
-
-                }
+              //map[c, v] = '.';
+              
+              while (map[c, v] != ' ')
+              {
+                  c = random.Next(5, 11);
+                  v = random.Next(5, 11); 
+              
+              }
 
                 //if (map[c, v] == Convert.ToChar("]"))
                 //{

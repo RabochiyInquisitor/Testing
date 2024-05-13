@@ -1,16 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "R:\\\u0422\u0435\u0441\u0442\u043E\u0432\u044B\u0439 \u041F\u0440\u043E\u0435\u043A\u0442\\",
+  "WorkspaceRootPath": "R:\\GitTest\\\u0422\u0435\u0441\u0442\u043E\u0432\u044B\u0439 \u041F\u0440\u043E\u0435\u043A\u0442\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F737E221-3082-4719-BBF3-126FD42002CE}|\u0422\u0435\u0441\u0442\u043E\u0432\u044B\u0439 \u041F\u0440\u043E\u0435\u043A\u0442.csproj|r:\\\u0442\u0435\u0441\u0442\u043E\u0432\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F737E221-3082-4719-BBF3-126FD42002CE}|\u0422\u0435\u0441\u0442\u043E\u0432\u044B\u0439 \u041F\u0440\u043E\u0435\u043A\u0442.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C0FE124-DFDA-4EC9-86F7-D9ED61196327}|..\\\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u0438\u0435 \u0446\u0432\u0435\u0442\u0430\\\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u0438\u0435 \u0446\u0432\u0435\u0442\u0430.csproj|r:\\\u0438\u0437\u043C\u0435\u043D\u0435\u043D\u0438\u0435 \u0446\u0432\u0435\u0442\u0430\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2F8E5CD1-A7DF-48F3-BCDA-26F39A996E6E}|..\\\u0418\u0433\u0440\u0430 \u043F\u0440\u043E\u0442\u0438\u0432 \u043A\u043E\u043C\u043F\u0430\\\u0418\u0433\u0440\u0430 \u043F\u0440\u043E\u0442\u0438\u0432 \u043A\u043E\u043C\u043F\u0430.csproj|r:\\\u0438\u0433\u0440\u0430 \u043F\u0440\u043E\u0442\u0438\u0432 \u043A\u043E\u043C\u043F\u0430\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F737E221-3082-4719-BBF3-126FD42002CE}|WarShips.csproj|r:\\gittest\\\u0442\u0435\u0441\u0442\u043E\u0432\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F737E221-3082-4719-BBF3-126FD42002CE}|WarShips.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,47 +17,21 @@
           "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "R:\\\u0418\u0433\u0440\u0430 \u043F\u0440\u043E\u0442\u0438\u0432 \u043A\u043E\u043C\u043F\u0430\\Program.cs",
-              "RelativeDocumentMoniker": "..\\\u0418\u0433\u0440\u0430 \u043F\u0440\u043E\u0442\u0438\u0432 \u043A\u043E\u043C\u043F\u0430\\Program.cs",
-              "ToolTip": "R:\\\u0418\u0433\u0440\u0430 \u043F\u0440\u043E\u0442\u0438\u0432 \u043A\u043E\u043C\u043F\u0430\\Program.cs",
-              "RelativeToolTip": "..\\\u0418\u0433\u0440\u0430 \u043F\u0440\u043E\u0442\u0438\u0432 \u043A\u043E\u043C\u043F\u0430\\Program.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T05:04:18.602Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "R:\\\u0422\u0435\u0441\u0442\u043E\u0432\u044B\u0439 \u041F\u0440\u043E\u0435\u043A\u0442\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "R:\\\u0422\u0435\u0441\u0442\u043E\u0432\u044B\u0439 \u041F\u0440\u043E\u0435\u043A\u0442\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAQwBUAAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T16:39:24.422Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "R:\\\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u0438\u0435 \u0446\u0432\u0435\u0442\u0430\\Program.cs",
-              "RelativeDocumentMoniker": "..\\\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u0438\u0435 \u0446\u0432\u0435\u0442\u0430\\Program.cs",
-              "ToolTip": "R:\\\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u0438\u0435 \u0446\u0432\u0435\u0442\u0430\\Program.cs",
-              "RelativeToolTip": "..\\\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u0438\u0435 \u0446\u0432\u0435\u0442\u0430\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAARAAAA",
+              "DocumentMoniker": "R:\\GitTest\\\u0422\u0435\u0441\u0442\u043E\u0432\u044B\u0439 \u041F\u0440\u043E\u0435\u043A\u0442\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "R:\\GitTest\\\u0422\u0435\u0441\u0442\u043E\u0432\u044B\u0439 \u041F\u0440\u043E\u0435\u043A\u0442\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAFkAAAAAAAAAAAAwwHEAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T07:24:48.807Z"
+              "WhenOpened": "2024-05-12T11:36:31.952Z",
+              "EditorCaption": ""
             }
           ]
         }

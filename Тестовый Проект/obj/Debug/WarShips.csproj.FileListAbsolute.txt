@@ -1,0 +1,14 @@
+R:\Тестовый Проект\bin\Debug\Тестовый Проект.exe.config
+R:\Тестовый Проект\bin\Debug\Тестовый Проект.exe
+R:\Тестовый Проект\bin\Debug\Тестовый Проект.pdb
+R:\Тестовый Проект\obj\Debug\WarShips.csproj.AssemblyReference.cache
+R:\Тестовый Проект\obj\Debug\WarShips.csproj.CoreCompileInputs.cache
+R:\Тестовый Проект\obj\Debug\Тестовый Проект.exe
+R:\Тестовый Проект\obj\Debug\Тестовый Проект.pdb
+R:\GitTest\Тестовый Проект\bin\Debug\Тестовый Проект.exe.config
+R:\GitTest\Тестовый Проект\bin\Debug\Тестовый Проект.exe
+R:\GitTest\Тестовый Проект\bin\Debug\Тестовый Проект.pdb
+R:\GitTest\Тестовый Проект\obj\Debug\WarShips.csproj.AssemblyReference.cache
+R:\GitTest\Тестовый Проект\obj\Debug\WarShips.csproj.CoreCompileInputs.cache
+R:\GitTest\Тестовый Проект\obj\Debug\Тестовый Проект.exe
+R:\GitTest\Тестовый Проект\obj\Debug\Тестовый Проект.pdb
