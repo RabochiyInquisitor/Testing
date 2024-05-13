@@ -106,14 +106,14 @@ namespace Тестовый_Проект
                 int v = random.Next(5, 11);
 
 
-              //map[c, v] = '.';
               
-              while (map[c, v] != ' ')
-              {
-                  c = random.Next(5, 11);
-                  v = random.Next(5, 11); 
-              
-              }
+                while (map[c, v] != ' ')
+                {
+                    c = random.Next(5, 11);
+                    v = random.Next(5, 11); 
+                
+                }
+                map[c, v] = '.';
 
                 //if (map[c, v] == Convert.ToChar("]"))
                 //{
