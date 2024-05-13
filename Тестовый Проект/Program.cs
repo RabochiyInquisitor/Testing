@@ -18,42 +18,52 @@ namespace Тестовый_Проект
       
        static void Main()
        {
-           
 
-           Console.WriteLine("Добро пожаловать на борт! Ваша эскадра готова к бою. Все ждут вашего приказа к атаке. (Начать атаку?)");
-      
-           string command = Console.ReadLine();
-           char[,] map = ReadMap(path1);
-           char[,] ships = ReadMap(path2);
-      
-           if (command == "Начать атаку")
-           {
-      
-               Console.WriteLine("\t");
-               Console.Clear();
-      
-               DrawShips(ships);
-      
-               Console.WriteLine("В дальнейшем вы всегда сможете вернуться к этому списку ,прописав команду /ships");
-               Console.WriteLine("\t");
-           }
-           Console.WriteLine("Приступаем?");
-      
-           string answer = Console.ReadLine();
-      
-      
-      
-           if (answer == answer1[0] || answer == answer1[1] || answer == answer1[2])
-           {
-               Console.Clear();
-               DrawMap(map);
-               Console.WriteLine("Назовите первую координату: ");
-               int cordinatey = int.Parse(Console.ReadLine());
-      
-               Console.WriteLine("Назовите вторую координату: ");
-               int cordinatex = int.Parse(Console.ReadLine());
-               Try(cordinatey, cordinatex, map);
-           }
+           string wait = Console.ReadLine();
+           Console.Clear();
+
+
+            while (wait != "Стоп")
+            {
+                Console.Clear();
+
+
+                Console.WriteLine("Добро пожаловать на борт! Ваша эскадра готова к бою. Все ждут вашего приказа к атаке. (Начать атаку?)");
+
+                string command = Console.ReadLine();
+                char[,] map = ReadMap(path1);
+                char[,] ships = ReadMap(path2);
+
+                if (command == "Начать атаку")
+                {
+
+                    Console.WriteLine("\t");
+                    Console.Clear();
+
+                    DrawShips(ships);
+
+                    Console.WriteLine("В дальнейшем вы всегда сможете вернуться к этому списку ,прописав команду /ships");
+                    Console.WriteLine("\t");
+                }
+                Console.WriteLine("Приступаем?");
+
+                string answer = Console.ReadLine();
+
+
+
+                if (answer == answer1[0] || answer == answer1[1] || answer == answer1[2])
+                {
+                    Console.Clear();
+                    DrawMap(map);
+                    Console.WriteLine("Назовите первую координату: ");
+                    int cordinatey = int.Parse(Console.ReadLine());
+
+                    Console.WriteLine("Назовите вторую координату: ");
+                    int cordinatex = int.Parse(Console.ReadLine());
+                    Try(cordinatey, cordinatex, map);
+                }
+                wait = Console.ReadLine();
+            }
            
       
       
@@ -99,40 +109,24 @@ namespace Тестовый_Проект
 
                 Random random = new Random();
 
-                int MaxValue = 11;
-                int MinValue = 11;
+                
+                
 
-                int c = random.Next(5, 11);
-                int v = random.Next(5, 11);
+                int c = random.Next(5, 30);
+                int v = random.Next(5, 30);
 
 
               
                 while (map[c, v] != ' ')
                 {
-                    c = random.Next(5, 11);
-                    v = random.Next(5, 11); 
+                    c = random.Next(5, 30);
+                    v = random.Next(5, 30); 
                 
                 }
                 map[c, v] = '.';
+                
 
-                //if (map[c, v] == Convert.ToChar("]"))
-                //{
-                //    map[c - 1, v] = Convert.ToChar('.');
-                //
-                //    
-                //}
-                //
-                //else if (map[c, v] == Convert.ToChar("["))
-                //{
-                //    map[c + 1, v] = Convert.ToChar('.');
-                //    
-                //
-                //}
-                //else if (v <= 2)
-                //{
-                //    map[c, v + 1] = Convert.ToChar('.');
-                //    
-                //}
+                
 
 
                 for (int y = 0; y < map.GetLength(1); y++)
@@ -148,6 +142,8 @@ namespace Тестовый_Проект
                     }
                     Console.Write("\n");
                 }
+                Console.WriteLine(c);
+                Console.WriteLine(v);
             }
             
             
@@ -184,57 +180,29 @@ namespace Тестовый_Проект
         {
             
 
-            Random random = new Random();
+             
 
-            int MaxValue = 11;
-            int MinValue = 11;
-
-            int x = random.Next(5, 11);
-            int y = random.Next(5, 11);
+                 int MaxValue = 30;
+                 
 
 
-
-
-                if (map[x, y] == Convert.ToChar("]"))
-                {
-                    map[x - 1, y] = Convert.ToChar('.');
-
-                    x--;
-                }
-              
-                else if (map[x, y] == Convert.ToChar("["))
-                {
-                    map[x + 1, y] = Convert.ToChar('.');
-                    x++;
-                
-                }
-                //else if( x <= 2 )
-                //{
-                //    map[x + 2, y] = Convert.ToChar('.');
-                //    x = x + 2;
-                //}
-                else if (y <= 2)
-                {
-                    map[x, y + 1] = Convert.ToChar('.');
-                    y++;
-                }
-
-                if (map[cordinatex + 4, cordinatey + 2] == '.')
+                if (map[cordinatex + 5, cordinatey + 1] == '.')
                 {
                     Console.WriteLine("Вы попали!");
 
+                }
+                else
+                {
+               
+                    Console.WriteLine("Вы не попали!");
+               
                 }
                 if (cordinatex < 0 || cordinatex >= MaxValue || cordinatey < 0 || cordinatey >= MaxValue)
                 {
                     Console.WriteLine("Ваша эскадра ушла за координаты, и была признана дезертирующей. Вас отстранили от должности и предали военному трибуналу.");
                 }
 
-                else
-                {
-
-                    Console.WriteLine("Вы не попали!");
-                    
-                }
+               
 
             
             
