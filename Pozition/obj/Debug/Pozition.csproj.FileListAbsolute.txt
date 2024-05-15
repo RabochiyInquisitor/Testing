@@ -1,0 +1,7 @@
+R:\GitTest\Pozition\bin\Debug\Pozition.exe.config
+R:\GitTest\Pozition\bin\Debug\Pozition.exe
+R:\GitTest\Pozition\bin\Debug\Pozition.pdb
+R:\GitTest\Pozition\obj\Debug\Pozition.csproj.AssemblyReference.cache
+R:\GitTest\Pozition\obj\Debug\Pozition.csproj.CoreCompileInputs.cache
+R:\GitTest\Pozition\obj\Debug\Pozition.exe
+R:\GitTest\Pozition\obj\Debug\Pozition.pdb

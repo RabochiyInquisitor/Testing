@@ -5,6 +5,9 @@
     {
       "AbsoluteMoniker": "D:0:0:{F737E221-3082-4719-BBF3-126FD42002CE}|WarShips.csproj|r:\\gittest\\\u0442\u0435\u0441\u0442\u043E\u0432\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F737E221-3082-4719-BBF3-126FD42002CE}|WarShips.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E16E9A2-980B-4548-8299-A18971D9915B}|..\\Pozition\\Pozition.csproj|r:\\gittest\\pozition\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,11 +17,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "R:\\GitTest\\Pozition\\Program.cs",
+              "RelativeDocumentMoniker": "..\\Pozition\\Program.cs",
+              "ToolTip": "R:\\GitTest\\Pozition\\Program.cs",
+              "RelativeToolTip": "..\\Pozition\\Program.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAADwv0UAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T17:06:34.761Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -28,7 +44,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "R:\\GitTest\\\u0422\u0435\u0441\u0442\u043E\u0432\u044B\u0439 \u041F\u0440\u043E\u0435\u043A\u0442\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwJUAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-12T11:36:31.952Z",
               "EditorCaption": ""
