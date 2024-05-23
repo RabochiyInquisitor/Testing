@@ -14,8 +14,6 @@ namespace Тестовый_Проект
        static string path2 = "ships.txt";
        static string[] answer1 = new string[] { "Да", "Приступаем", "Так точно" };
       
-      
-      
        static void Main()
        {
 
@@ -27,7 +25,6 @@ namespace Тестовый_Проект
             {
                 Console.Clear();
 
-
                 Console.WriteLine("Добро пожаловать на борт! Ваша эскадра готова к бою. Все ждут вашего приказа к атаке. (Начать атаку?)");
 
                 string command = Console.ReadLine();
@@ -36,7 +33,6 @@ namespace Тестовый_Проект
 
                 if (command == "Начать атаку")
                 {
-
                     Console.WriteLine("\t");
                     Console.Clear();
 
@@ -49,25 +45,19 @@ namespace Тестовый_Проект
 
                 string answer = Console.ReadLine();
 
-
-
                 if (answer == answer1[0] || answer == answer1[1] || answer == answer1[2])
                 {
                     Console.Clear();
-                    DrawMap(map);
+                    int x = DrawMap(map);
                     Console.WriteLine("Назовите первую координату: ");
                     int cordinatey = int.Parse(Console.ReadLine());
 
                     Console.WriteLine("Назовите вторую координату: ");
                     int cordinatex = int.Parse(Console.ReadLine());
-                    Try(cordinatey, cordinatex, map);
+                    Try(cordinatey, cordinatex, map, x);
                 }
                 wait = Console.ReadLine();
             }
-           
-      
-      
-      
        }
       
        public static char[,] ReadMap(string path)
@@ -100,21 +90,13 @@ namespace Тестовый_Проект
            return maxLength;
        }
       
-       static void DrawMap(char[,] map)
+       static int DrawMap(char[,] map)
        {
-           
-
-
-
                 Random random = new Random();
-
-                
-                
 
                 int c = random.Next(5, 34);
                 int v = random.Next(5, 12);
-
-
+               
               
                 while (map[c, v] != ' ')
                 {
@@ -123,9 +105,6 @@ namespace Тестовый_Проект
                 
                 }
                 map[c, v] = '.';
-                
-
-                
 
 
                 for (int y = 0; y < map.GetLength(1); y++)
@@ -133,74 +112,79 @@ namespace Тестовый_Проект
                     for (int x = 0; x < map.GetLength(0); x++)
                     {
                         Console.Write(map[x, y]);
-
-
-
-
-
                     }
                     Console.Write("\n");
                 }
-                Console.WriteLine(c);
-                Console.WriteLine(v);
-            
-            
-            
-            
-            
-            
-
-
-
-
+            return c;
         }
-        static void DrawShips(char[,] map)
+       static void DrawShips(char[,] map)
+       {
+          
+
+
+           for (int y = 0; y < map.GetLength(1); y++)
+           {
+               for (int x = 0; x < map.GetLength(0); x++)
+               {
+                   Console.Write(map[x, y]);
+
+
+
+
+
+               }
+               Console.Write("\n");
+           }
+
+       }
+
+       private static void Try(int cordinatex, int cordinatey, char[,] map, int x)
         {
+            int MaxValue = 10;
+
+            
+            if (map[cordinatex + 3, cordinatey + 1] == '.')
+                Console.WriteLine("Вы попали!");
+            
+
+            else if (map[cordinatex + 5, cordinatey + 1] == '.')
+                Console.WriteLine("Вы попали!");
+            
+            else if (map[cordinatex + 7, cordinatey + 1] == '.')
+                Console.WriteLine("Вы попали!");
            
 
-
-            for (int y = 0; y < map.GetLength(1); y++)
+            else if (map[cordinatex + 9, cordinatey + 1] == '.')
+                Console.WriteLine("Вы попали!");
+            
+            else if (map[cordinatex + 11, cordinatey + 1] == '.')
+                Console.WriteLine("Вы попали!");
+            
+            else if (map[cordinatex + 13, cordinatey + 1] == '.')
+                Console.WriteLine("Вы попали!");
+            
+            else if (map[cordinatex + 15, cordinatey + 1] == '.')
+                Console.WriteLine("Вы попали!");
+            
+            else if (map[cordinatex + 17, cordinatey + 1] == '.')
+                Console.WriteLine("Вы попали!");
+            
+            else if (map[cordinatex + 19, cordinatey + 1] == '.')
+                Console.WriteLine("Вы попали!");
+            
+            else if (map[cordinatex + 21, cordinatey + 1] == '.')
+                    Console.WriteLine("Вы попали!");
+            else
             {
-                for (int x = 0; x < map.GetLength(0); x++)
-                {
-                    Console.Write(map[x, y]);
-
-
-
-
-
-                }
-                Console.Write("\n");
+                Console.WriteLine("Вы не попали!");
             }
 
-        }
-
-        private static void Try(int cordinatex, int cordinatey, char[,] map)
-        {
+            if (cordinatex < 0 || cordinatex >= MaxValue || cordinatey < 0 || cordinatey >= MaxValue)
+            {
+                Console.WriteLine("Ваша эскадра ушла за координаты, и была признана дезертирующей. Вас отстранили от должности и предали военному трибуналу.");
+            }
             
-
-             
-
-                 int MaxValue = 30;
-                 
-
-
-                if (map[cordinatex + 5, cordinatey + 1] == '.')
-                {
-                    Console.WriteLine("Вы попали!");
-
-                }
-                else
-                {
-               
-                    Console.WriteLine("Вы не попали!");
-               
-                }
-                if (cordinatex < 0 || cordinatex >= MaxValue || cordinatey < 0 || cordinatey >= MaxValue)
-                {
-                    Console.WriteLine("Ваша эскадра ушла за координаты, и была признана дезертирующей. Вас отстранили от должности и предали военному трибуналу.");
-                }
-
+                
                
 
             
