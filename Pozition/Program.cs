@@ -11,15 +11,11 @@ namespace Pozition
     {
         static void Main(string[] args)
         {
-            int b = 2;
-            int c = 3;
-            Console.WriteLine(s);
+            DateTime time = DateTime.Now;
+
+            int hour = time.Hour;
+            Console.WriteLine("Текущее время: " +  hour);
         }
-        static int Sum(int a, int b)
-        {
-            int s = 0;
-            s = a + b;
-            return s;
-        }
+       
     }
 }

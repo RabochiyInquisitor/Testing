@@ -16,42 +16,50 @@ namespace Тестовый_Проект
       
        static void Main()
        {
+            int time = Time();
+            
+            if(time == 23)
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+            }
+            else
+                Console.ForegroundColor = ConsoleColor.White;
 
-           string wait = Console.ReadLine();
-           Console.Clear();
-
-
+            string wait = Console.ReadLine();
+            Console.Clear();
+            
+            
             while (wait != "Стоп")
             {
                 Console.Clear();
-
+            
                 Console.WriteLine("Добро пожаловать на борт! Ваша эскадра готова к бою. Все ждут вашего приказа к атаке. (Начать атаку?)");
-
+            
                 string command = Console.ReadLine();
                 char[,] map = ReadMap(path1);
                 char[,] ships = ReadMap(path2);
-
+            
                 if (command == "Начать атаку")
                 {
                     Console.WriteLine("\t");
                     Console.Clear();
-
+            
                     DrawShips(ships);
-
+            
                     Console.WriteLine("В дальнейшем вы всегда сможете вернуться к этому списку ,прописав команду /ships");
                     Console.WriteLine("\t");
                 }
                 Console.WriteLine("Приступаем?");
-
+            
                 string answer = Console.ReadLine();
-
+            
                 if (answer == answer1[0] || answer == answer1[1] || answer == answer1[2])
                 {
                     Console.Clear();
                     int x = DrawMap(map);
                     Console.WriteLine("Назовите первую координату: ");
                     int cordinatey = int.Parse(Console.ReadLine());
-
+            
                     Console.WriteLine("Назовите вторую координату: ");
                     int cordinatex = int.Parse(Console.ReadLine());
                     Try(cordinatey, cordinatex, map, x);
@@ -140,39 +148,40 @@ namespace Тестовый_Проект
 
        private static void Try(int cordinatex, int cordinatey, char[,] map, int x)
         {
-            int MaxValue = 10;
+            int MaxValue = 12;
+            cordinatey += 1;
 
-            
-            if (map[cordinatex + 3, cordinatey + 1] == '.')
+
+            if (map[cordinatex + 3, cordinatey] == '.')
                 Console.WriteLine("Вы попали!");
             
 
-            else if (map[cordinatex + 5, cordinatey + 1] == '.')
+            else if (map[cordinatex + 5, cordinatey] == '.')
                 Console.WriteLine("Вы попали!");
             
-            else if (map[cordinatex + 7, cordinatey + 1] == '.')
+            else if (map[cordinatex + 7, cordinatey] == '.')
                 Console.WriteLine("Вы попали!");
            
 
-            else if (map[cordinatex + 9, cordinatey + 1] == '.')
+            else if (map[cordinatex + 9, cordinatey] == '.')
                 Console.WriteLine("Вы попали!");
             
-            else if (map[cordinatex + 11, cordinatey + 1] == '.')
+            else if (map[cordinatex + 11, cordinatey] == '.')
                 Console.WriteLine("Вы попали!");
             
-            else if (map[cordinatex + 13, cordinatey + 1] == '.')
+            else if (map[cordinatex + 13, cordinatey] == '.')
                 Console.WriteLine("Вы попали!");
             
-            else if (map[cordinatex + 15, cordinatey + 1] == '.')
+            else if (map[cordinatex + 15, cordinatey] == '.')
                 Console.WriteLine("Вы попали!");
             
-            else if (map[cordinatex + 17, cordinatey + 1] == '.')
+            else if (map[cordinatex + 17, cordinatey] == '.')
                 Console.WriteLine("Вы попали!");
             
-            else if (map[cordinatex + 19, cordinatey + 1] == '.')
+            else if (map[cordinatex + 19, cordinatey] == '.')
                 Console.WriteLine("Вы попали!");
             
-            else if (map[cordinatex + 21, cordinatey + 1] == '.')
+            else if (map[cordinatex + 21, cordinatey] == '.')
                     Console.WriteLine("Вы попали!");
             else
             {
@@ -190,6 +199,14 @@ namespace Тестовый_Проект
             
             
         }
+       static int Time()
+       {
+           DateTime time = DateTime.Now;
+
+           int hour = time.Hour;
+           
+           return hour;
+       }
 
 
         
