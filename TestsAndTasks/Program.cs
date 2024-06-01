@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using System.Media;
 using System.Threading;
 
 namespace TestsAndTasks
@@ -140,10 +141,10 @@ namespace TestsAndTasks
                 while (true)
                 {
                     var key = Console.ReadKey(true);
-                    if (key.KeyChar == '/')
+                    if(key.KeyChar == '/')
                     {
                         string command = Console.ReadKey(true).KeyChar.ToString();
-                        if (command == "shipsinfo")
+                        if(command == "shipsinfo")
                         {
                             DisplayShipsInfo(ships);
                         }
@@ -157,11 +158,11 @@ namespace TestsAndTasks
             Console.Clear();
             DrawShips(ships);
             var key = Console.ReadKey();
-            if (key.Key == ConsoleKey.Enter)
+            if(key.Key == ConsoleKey.Enter)
             {
                 Console.Clear();
             }
-
+            
 
         }
 

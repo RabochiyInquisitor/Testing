@@ -1,0 +1,5 @@
+R:\GitTest\TestsAndTasks\obj\Debug\net8.0\TestsAndTasks.GeneratedMSBuildEditorConfig.editorconfig
+R:\GitTest\TestsAndTasks\obj\Debug\net8.0\TestsAndTasks.AssemblyInfoInputs.cache
+R:\GitTest\TestsAndTasks\obj\Debug\net8.0\TestsAndTasks.AssemblyInfo.cs
+R:\GitTest\TestsAndTasks\obj\Debug\net8.0\TestsAndTasks.csproj.CoreCompileInputs.cache
+R:\GitTest\TestsAndTasks\obj\Debug\net8.0\TestsAndTasks.sourcelink.json
