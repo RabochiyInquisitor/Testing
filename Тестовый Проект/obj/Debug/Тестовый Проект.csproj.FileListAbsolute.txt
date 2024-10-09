@@ -1,0 +1,7 @@
+R:\Тестовый Проект\bin\Debug\Тестовый Проект.exe.config
+R:\Тестовый Проект\bin\Debug\Тестовый Проект.exe
+R:\Тестовый Проект\bin\Debug\Тестовый Проект.pdb
+R:\Тестовый Проект\obj\Debug\Тестовый Проект.csproj.AssemblyReference.cache
+R:\Тестовый Проект\obj\Debug\Тестовый Проект.csproj.CoreCompileInputs.cache
+R:\Тестовый Проект\obj\Debug\Тестовый Проект.exe
+R:\Тестовый Проект\obj\Debug\Тестовый Проект.pdb
